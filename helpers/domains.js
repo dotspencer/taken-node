@@ -1,3 +1,4 @@
+var keys = require('./keys.js');
 
 exports.lookup = (req, res) => {
   res.setHeader('Content-Type', 'application/json');
