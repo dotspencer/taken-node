@@ -2,6 +2,8 @@
 // TODO: Clean query value (php) or match for regex, if not, error
 // TODO: Google analytics
 
+// TODO: Allow for second search during loading
+
 var input = document.querySelector('#in');
 var results = document.querySelector('.results');
 var tlds = ["com", "net", "org", "io", "info"];
