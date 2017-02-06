@@ -1,11 +1,11 @@
 var keys = require('./keys.js');
+var request = require('request');
 
 exports.lookup = (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
 
   var word = req.query.word;
   if(word == null){
-    res.send("{}");
+    res.json({});
     return;
   }
 
@@ -27,6 +27,6 @@ exports.lookup = (req, res) => {
 
   request(options, function(error, response, body){
     if (error) throw new Error(error);
-    res.send(body);
+    res.json(body);
   });
 }

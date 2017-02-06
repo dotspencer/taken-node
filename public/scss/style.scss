@@ -1,0 +1,93 @@
+$main-width: 600px;
+
+$dosis: 'Dosis', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+
+$font: $quicksand;
+$font-medium: 1.4em;
+
+@mixin fadein {
+  animation: .5s fadein;
+}
+
+body {
+  font-family: $font;
+  background: whitesmoke;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-weight: 300;
+}
+.content {
+  width: $main-width;
+  display: inline-block;
+  text-align: center;
+}
+#title {
+  font-weight: 500;
+  text-decoration: line-through;
+}
+input[type='text'] {
+  font-family: $font;
+  border: 1px solid lightgray;
+  font-size: $font-medium;
+  padding: 6px;
+  text-align: center;
+  width: 70%;
+  &:focus {
+    border: 1px solid dodgerblue;
+    //outline: 1px solid dodgerblue;
+    outline: none;
+  }
+}
+table{
+  margin: 0 auto;
+  text-align: left;
+  border-spacing: 15px 20px;
+}
+td {
+  font-size: $font-medium;
+  padding: 3px 6px;
+  box-sizing: border-box;
+}
+td.status {
+  width: 150px;
+  text-align: center;
+
+  &.available{
+    background-color: rgba(50,205,50,0.5);
+    outline: 1px solid #333;
+    @include fadein;
+  }
+  &.taken{
+    text-decoration: line-through;
+    @include fadein;
+  }
+}
+.spin{
+  width: 60px;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  body{
+    //background: lightblue;
+  }
+  .content{
+    //background-color: indianred;
+    width: 100%;
+  }
+}
