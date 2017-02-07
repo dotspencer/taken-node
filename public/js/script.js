@@ -6,6 +6,9 @@
 
 var input = document.querySelector('#in');
 var results = document.querySelector('.results');
+var title = document.querySelector('#title');
+var message = document.querySelector('.message');
+
 var tlds = ["com", "net", "org", "io", "info"];
 var name = "";
 
@@ -18,7 +21,18 @@ function bindEvents(){
     if(e.keyCode == 13){
       lookup();
     }
-  })
+  });
+  title.addEventListener('click', function(){
+    clear();
+    message.classList.remove('hidden');
+    input.value = "";
+    input.select();
+  });
+}
+
+function clear(){
+  // Clearing results
+  results.innerHTML = "";
 }
 
 function sendRequests(name){
@@ -36,7 +50,6 @@ function sendRequests(name){
 
 function receive(result){
   var domains = result.domains;
-  console.log(domains);
 
   for(var i = 0; i < domains.length; i++){
     var domain = domains[i];
@@ -64,8 +77,8 @@ function lookup(){
 }
 
 function createResultsTable(name){
-  // Clearing results
-  results.innerHTML = "";
+  message.classList.add('hidden');
+  clear();
 
   var table = document.createElement('table');
   var tbody = document.createElement('tbody');
