@@ -5,6 +5,9 @@ body {
   margin: 0;
   text-align: center; }
 
+p {
+  font-size: 1.3em; }
+
 h1 {
   font-weight: 300; }
 
@@ -20,7 +23,7 @@ h1 {
 input[type='text'] {
   font-family: "Quicksand", sans-serif;
   border: 1px solid lightgray;
-  font-size: 1.4em;
+  font-size: 1.5em;
   padding: 6px;
   text-align: center;
   width: 70%; }
@@ -34,7 +37,7 @@ table {
   border-spacing: 15px 20px; }
 
 td {
-  font-size: 1.4em;
+  font-size: 1.5em;
   padding: 3px 6px;
   box-sizing: border-box; }
 

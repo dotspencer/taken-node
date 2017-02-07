@@ -38,8 +38,6 @@ function receive(result){
   var domains = result.domains;
   console.log(domains);
 
-  // TODO: show error on domains.length == 0
-
   for(var i = 0; i < domains.length; i++){
     var domain = domains[i];
     var td = document.getElementById(domain.domain.split(".").pop());
@@ -48,6 +46,7 @@ function receive(result){
     td.classList.add(status);
   }
   input.removeAttribute('disabled');
+  input.select();
 }
 
 function lookup(){

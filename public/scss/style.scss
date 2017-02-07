@@ -4,7 +4,8 @@ $dosis: 'Dosis', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
 
 $font: $quicksand;
-$font-medium: 1.4em;
+$font-medium: 1.5em;
+$font-small: 1.3em;
 
 @mixin fadein {
   animation: .5s fadein;
@@ -16,6 +17,9 @@ body {
   height: 100vh;
   margin: 0;
   text-align: center;
+}
+p{
+  font-size: 1.3em;
 }
 h1 {
   font-weight: 300;
