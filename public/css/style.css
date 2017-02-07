@@ -25,9 +25,10 @@ input[type='text'] {
   font-family: "Quicksand", sans-serif;
   border: 1px solid lightgray;
   font-size: 1.5em;
-  padding: 6px;
-  text-align: center;
-  width: 70%; }
+  padding: 6px 12px;
+  text-align: left;
+  width: 60%;
+  box-sizing: border-box; }
   input[type='text']:focus {
     border: 1px solid dodgerblue;
     outline: none; }
