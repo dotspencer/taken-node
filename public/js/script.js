@@ -9,7 +9,7 @@ var results = document.querySelector('.results');
 var title = document.querySelector('#title');
 var message = document.querySelector('.message');
 
-var tlds = ["com", "net", "org", "io", "info"];
+var tlds = ["com", "net", "org", "co", "io", "info"];
 var name = "";
 
 var debug = false;

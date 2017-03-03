@@ -20,6 +20,7 @@ exports.lookup = (req, res) => {
      [ word + '.com',
         word + '.org',
         word + '.net',
+        word + '.co',
         word + '.io',
         word + '.info' ],
     json: true
