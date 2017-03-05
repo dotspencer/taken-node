@@ -21,7 +21,7 @@ h1 {
   text-decoration: line-through;
   cursor: pointer; }
 
-input[type='text'] {
+#in {
   font-family: "Quicksand", sans-serif;
   border: 1px solid lightgray;
   font-size: 1.5em;
@@ -29,7 +29,7 @@ input[type='text'] {
   text-align: left;
   width: 60%;
   box-sizing: border-box; }
-  input[type='text']:focus {
+  #in:focus {
     border: 1px solid dodgerblue;
     outline: none; }
 
@@ -71,6 +71,9 @@ td.status {
     opacity: 1; } }
 @media (max-width: 550px) {
   .content {
-    width: 100%; } }
+    width: 100%; }
+
+  #in {
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -34,7 +34,7 @@ h1 {
   text-decoration: line-through;
   cursor: pointer;
 }
-input[type='text'] {
+#in {
   font-family: $font;
   border: 1px solid lightgray;
   font-size: $font-medium;
@@ -94,10 +94,13 @@ td.status {
 
 @media (max-width: 550px) {
   body{
-    //background: lightblue;
+    // background: lightblue;
   }
   .content{
     //background-color: indianred;
     width: 100%;
+  }
+  #in{
+    width: 90%;
   }
 }
